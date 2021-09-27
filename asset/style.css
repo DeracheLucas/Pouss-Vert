@@ -1,0 +1,134 @@
+body{
+    background-color: #f5f5f5;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    margin-bottom: 50px;
+    background-color: #fff;
+    padding: 40px 60px;
+    border-radius: 10px;
+    min-width: 500px;
+}
+
+form h1{
+    color: #666;
+    text-align: center;
+}
+
+form .inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+form .inputs input{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f2f2f2;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+form .inputs input[type="password"]{
+    margin-bottom: 0px;
+}
+
+form .inputs a{
+    font-size: 12px;
+    color: #767676;
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+form .radio{
+    text-align: center;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+label{
+    color: #01cc65;
+    font-size: 18px;
+    border: 2px solid #01cc65;
+    border-radius: 5px;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin-bottom: 15px;
+
+}
+
+input[type="radio"]:checked + label{
+    background-color: #01cc65;
+    color:#fff ;
+}
+
+form button{
+    font-size: 17px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #777;
+    color: #fff;
+    outline: none;
+    transition: 0.5s;
+}
+
+form button:hover{
+    padding: 17px 27px;
+}
+
+.pp{
+    height: 300px;
+    width: 300px;   
+    position: relative;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    background: url('images/profil.jpg'); 
+    background-size: 100% 100%;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+#avatar{
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    outline: none;
+    color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 120px;
+    cursor: pointer;
+    transition: 0.5s;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+}
+
+#avatar::-webkit-file-upload-button{
+    visibility: hidden;
+}
+
+#avatar::before{
+    position: absolute;
+    transform: translate(-50% -50%);
+    top: 10%;
+    left: 20%;
+    content: "Modifier la photo de profil";
+    color: #fff;
+    font-size: 15px;
+}
+
+#avatar:hover{
+    opacity: 1;
+}

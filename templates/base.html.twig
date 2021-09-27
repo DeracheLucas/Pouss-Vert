@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html class="vh-100">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {# Run `composer require symfony/webpack-encore-bundle`
+           and uncomment the following Encore helpers to start using Symfony UX #}
+            {# bootstrap CSS #}
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="front/css/style.css">
+        
+        {% block stylesheets %}
+        {% endblock %}
+    </head>
+
+    <body class="">
+        
+<header class="container-fluid mt-1">
+    <div class="row">
+        <div class="col-2 logo">
+            <img src="https://picsum.photos/250/43" alt="">
+        </div>
+            <form class="d-flex col-5 py-3 recherche">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+                <div class="col-2 d-flex justify-content-around">
+                    <a class="col-2" href="#"><img class="col-12" src="svg/sun.svg" alt=""></a>
+                    <a class="col-2" href="#"><img class="col-12" src="svg/sun.svg" alt=""></a>
+                    <a class="col-2" href="#"><img class="col-12" src="svg/sun.svg" alt=""></a>
+                </div>
+        <div class="col-2">
+            <div class="row border border-primary  rounded-pill">
+                <h5 class="col-7 m-0 p-0 text-center py-3 border-end border-primary">pseudo</h5>
+                <a class="col-2 ms-1 p-0 pt-1 pe-2" href="#"><img src="svg/sun.svg" class="col-12" alt=""></a>
+                <a class="col-2 ms-2 p-0 pt-1 pe-2" href="#"><img src="svg/sun.svg" class="col-12" alt=""></a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <nav class="container my-1">
+        <div class="row d-flex justify-content-around">
+            <div class="col-2 btn btn-outline-success rounded-pill border border-1 border  text-center">
+                <a class="text-info text-decoration-none" href="#">Commencer</a>
+            </div>
+            <div class="col-2 btn btn-outline-success rounded-pill border border-1 border  text-center">
+                <a class="text-info text-decoration-none" href="#">Calendrier</a>
+            </div>
+            <div class="col-2 btn btn-outline-success rounded-pill border border-1 border  text-center">
+                <a class="text-info text-decoration-none" href="#">Fruits/Légumes</a>
+            </div>
+            <div class="col-2 btn btn-outline-success rounded-pill border border-1 border  text-center">
+                <a class="text-info text-decoration-none" href="#">Tuto</a>
+            </div>
+            <div class="col-2 btn btn-outline-success rounded-pill border border-1 border  text-center">
+                <a class="text-info text-decoration-none" href="#">Forum(bonus)</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+        {% block body %}
+        
+        
+        
+        
+        
+        
+        {% endblock %}
+
+
+
+
+<footer class="col-12">
+    <div class="row py-1 d-flex justify-content-around">
+        <div class="col-2">
+            <a class="col-2" href="#">
+                <img class="col-2" src="svg/twitter.png" alt="Twitter"></a>
+                <a class="col-2" href="#">
+                    <img class="bg-light rounded-circle col-2" src="svg/pinterest.png" alt="Pintirest"></a>
+                    <a class="col-2" href="#">
+                        <img class="bg-light rounded-pill col-2" src="svg/facebook.png" alt="Facebook"></a>
+                    </div>
+                    <p class="col-2">
+                        <a class="col-2 fs-3 fw-bold text-upercase  text-dark w-100" href="#">Nous Contacter</a>
+                    </p>
+                    <p class="col-2">
+                        <a class="col-2 fs-3 fw-bold text-upercase  text-dark w-100" href="#">Mentions Légales</a>
+                    </p>
+                    <p class="col-2">
+                        <a class="col-2 fs-3 fw-bold text-upercase  text-dark w-100" href="#">Gérer le Consentement</a>
+                    </p>
+                    <p class="col-2">
+                        <a class="col-2 fs-3 fw-bold text-upercase  text-dark w-100" href="#">Green'Hand.xyz</a>
+                    </p>
+                </div>
+            </footer>
+
+
+
+
+
+        {% block javascripts %}
+            {#{{ encore_entry_script_tags('app') }}#}
+        {% endblock %}
+            <!-- JavaScript Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+            <script src="front/js/app.js"></script>
+
+
+    </body>
+</html>

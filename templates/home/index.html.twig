@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{title}}{% endblock %}
+
+{% block body %}
+
+<section class="container-fluid">
+    <div class="row">
+        <header class=" col-12 d-flex justify-content-between p-3">
+            <a class=" col-2 btn btn-primary" href="{{path('register')}}">commencer</a>
+            <a class=" col-2  btn btn-primary" href="{{path('login')}}">connexion</a>
+        </header>
+        <div class="col-12 text-center">
+            <p class="poeme">Pour l'amour d'une rose, le jardinier devient l'esclave de mille épines.</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+{% endblock %}
